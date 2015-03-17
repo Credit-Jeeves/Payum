@@ -241,11 +241,11 @@ The bundle supports [omnipay][omnipay] gateways (up to 25) out of the box. They 
 
 ```php
 <?php
-//Source: Payum\Examples\ReadmeTest::bigPicture()
-use Payum\Examples\Action\CaptureAction;
-use Payum\Examples\Action\StatusAction;
-use Payum\Request\CaptureRequest;
-use Payum\Payment;
+//Source: Payum2\Examples\ReadmeTest::bigPicture()
+use Payum2\Examples\Action\CaptureAction;
+use Payum2\Examples\Action\StatusAction;
+use Payum2\Request\CaptureRequest;
+use Payum2\Payment;
 
 //Populate payment with actions.
 $payment = new Payment;
@@ -268,12 +268,12 @@ echo 'We are done!';
 
 ```php
 <?php
-//Source: Payum\Examples\ReadmeTest::interactiveRequests()
-use Payum\Examples\Request\AuthorizeRequest;
-use Payum\Examples\Action\AuthorizeAction;
-use Payum\Request\CaptureRequest;
-use Payum\Request\RedirectUrlInteractiveRequest;
-use Payum\Payment;
+//Source: Payum2\Examples\ReadmeTest::interactiveRequests()
+use Payum2\Examples\Request\AuthorizeRequest;
+use Payum2\Examples\Action\AuthorizeAction;
+use Payum2\Request\CaptureRequest;
+use Payum2\Request\RedirectUrlInteractiveRequest;
+use Payum2\Payment;
 
 $payment = new Payment;
 $payment->addAction(new AuthorizeAction());
@@ -293,10 +293,10 @@ if ($interactiveRequest = $payment->execute($request, $catchInteractive = true))
 
 ```php
 <?php
-//Source: Payum\Examples\ReadmeTest::gettingRequestStatus()
-use Payum\Examples\Action\StatusAction;
-use Payum\Request\BinaryMaskStatusRequest;
-use Payum\Payment;
+//Source: Payum2\Examples\ReadmeTest::gettingRequestStatus()
+use Payum2\Examples\Action\StatusAction;
+use Payum2\Request\BinaryMaskStatusRequest;
+use Payum2\Payment;
 
 //Populate payment with actions.
 $payment = new Payment;
@@ -318,10 +318,10 @@ echo 'Uhh something wrong. Check other possible statuses!';
 
 ```php
 <?php
-//Source: Payum\Examples\ReadmeTest::persistPaymentDetails()
-use Payum\Payment;
-use Payum\Storage\FilesystemStorage;
-use Payum\Extension\StorageExtension;
+//Source: Payum2\Examples\ReadmeTest::persistPaymentDetails()
+use Payum2\Payment;
+use Payum2\Storage\FilesystemStorage;
+use Payum2\Extension\StorageExtension;
 
 $storage = new FilesystemStorage('path_to_storage_dir', 'YourModelClass', 'idProperty');
 

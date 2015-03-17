@@ -17,10 +17,10 @@
 * `StatusInterface` introduce two new statuses: `expired` and `suspended`.
 * `BinaryMaskStatusRequest::STATUS_IN_PROGRESS` renamed to `BinaryMaskStatusRequest::STATUS_PENDING`
 * `PaymentInstructionAggregateInterface` class renamed to `DetailsAggregateInterface`
-* `DetailsAggregateInterface` class moved to `Payum\Model` namespace
+* `DetailsAggregateInterface` class moved to `Payum2\Model` namespace
 * `DetailsAggregateInterface::getPaymentInstruction` renamed to `DetailsAggregateInterface::getDetails`
 * `PaymentInstructionAwareInterface` class renamed to `DetailsAwareInterface`
-* `DetailsAwareInterface` class moved to `Payum\Model` namespace
+* `DetailsAwareInterface` class moved to `Payum2\Model` namespace
 * `DetailsAwareInterface::setPaymentInstruction` renamed to `DetailsAwareInterface::setDetails`
 * `ActionApiAwareInterface` interface was deleted. Use combination of `ActionInterface` and `ApiAwareInterface` instead.
 * `ActionPaymentAwareInterface` interface was deleted. Use combination og `ActionInterface` and `PaymentAwareInterface` instead.
@@ -50,4 +50,4 @@
 * `InstructionAggregateInterface::getInstruction` renamed to `PaymentInstructionAggregateInterface::getPaymentInstruction`
 * `SimpleSell` class was removed.
 * Remove Model prefix from `Storages`.
-* Change `Storages` namespace. It was `Payum\Domain\Storage\XXX` now `Payum\Storage\XXX`.
+* Change `Storages` namespace. It was `Payum2\Domain\Storage\XXX` now `Payum2\Storage\XXX`.

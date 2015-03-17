@@ -11,5 +11,5 @@ EOM;
     exit(1);
 }
 
-$loader->add('Payum\Tests', __DIR__);
-$loader->add('Payum\Examples', realpath(__DIR__.'/../examples'));
+$loader->add('Payum2\Tests', __DIR__);
+$loader->add('Payum2\Examples', realpath(__DIR__.'/../examples'));

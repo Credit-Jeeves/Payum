@@ -1,9 +1,9 @@
 {
-    "name": "payum/payum",
+    "name": "payum2/payum",
     "type": "library",
     "description": "Payment lib",
     "keywords": ["payment", "paypal", "paypal ipn", "paypal digital goods", "paypal recurring payments", "authorize.net", "be2bill", "omnipay gateways"],
-    "homepage": "",
+    "homepage": "https://github.com/Credit-Jeeves/Payum",
     "license": "MIT",
     "authors": [
         {
@@ -36,7 +36,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Payum": "src/"
+            "Payum2": "src/"
         }
     },
     "extra": {

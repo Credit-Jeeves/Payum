@@ -241,28 +241,28 @@ The bundle supports [omnipay][omnipay] gateways (up to 25) out of the box. They 
 
 ```php
 <?php
-{{testo:Payum\Examples\ReadmeTest::bigPicture}}
+{{testo:Payum2\Examples\ReadmeTest::bigPicture}}
 ```
 
 ### How to manage authorize redirect?
 
 ```php
 <?php
-{{testo:Payum\Examples\ReadmeTest::interactiveRequests}}
+{{testo:Payum2\Examples\ReadmeTest::interactiveRequests}}
 ```
 
 ### How to check payment status
 
 ```php
 <?php
-{{testo:Payum\Examples\ReadmeTest::gettingRequestStatus}}
+{{testo:Payum2\Examples\ReadmeTest::gettingRequestStatus}}
 ```
 
 ### How to persist payment details?
 
 ```php
 <?php
-{{testo:Payum\Examples\ReadmeTest::persistPaymentDetails}}
+{{testo:Payum2\Examples\ReadmeTest::persistPaymentDetails}}
 ```
 What's inside? 
 
